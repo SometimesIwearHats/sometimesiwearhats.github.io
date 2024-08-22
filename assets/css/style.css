@@ -48,7 +48,6 @@ footer ul li {
   margin: 0 1rem;
 }
 
-
 /* Buttons */
 .btn {
   padding: 10px 25px;
@@ -87,29 +86,21 @@ footer ul li {
   animation: action 1s infinite alternate;
 }
 
-/* Contact Form */
-.contact-form .help-block ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.form-control {
-  border-radius: 25px;
-}
-
 /* Container Styling */
 .container-fluid {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   padding: 50px 0;
 }
 
-/* Contact Form Styling */
+/* Contact Form */
 .contact-form {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Input and Textarea Styling */
@@ -152,43 +143,64 @@ footer ul li {
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
-  color: #17c3b2;
+  color: #007bff; /* Match with My Skills */
   text-transform: uppercase;
   position: relative;
   z-index: 1;
 }
 
-.position-relative h1::before {
-  content: 'Contact Me';
+.contact-form h1::before {
+  content: 'CONTACT ME';
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  font-size: 120px;
+  font-size: 100px; /* Match with My Skills */
   color: rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .contact-form .form-control {
-      padding: 15px;
+    padding: 15px;
   }
 
   .contact-form button {
-      padding: 12px;
+    padding: 12px;
   }
 }
 
+/* Large Background Text */
+#contact h1 {
+  font-size: 36px; /* Match with My Skills */
+  font-weight: bold;
+  color: #007bff; /* Match with My Skills */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
 
+#contact h1::after {
+  content: "CONTACT ME";
+  position: absolute;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 100px; /* Match with My Skills */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
+/* Form Row Flexbox */
+#contactForm .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
 
-
-
-
-
-
-
-
-
-
+#contactForm .control-group.col-sm-6 {
+  flex: 1;
+  width: 45%;
+}
