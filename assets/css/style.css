@@ -1,0 +1,225 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Header */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li a,
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.btn-social {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+}
+
+/* Scroll Features */
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+/* Container Styling */
+.container-fluid {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+/* Services Section */
+.service-icon-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+}
+
+.servicesIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input and Textarea Styling */
+.contact-form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form .form-control:focus {
+  border-color: #17c3b2;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(23, 195, 178, 0.1);
+  outline: none;
+}
+
+/* Button Styling */
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #17c3b2;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #14a89a;
+}
+
+/* Header Styling */
+.contact-form h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff; /* Match with My Skills */
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form h1::before {
+  content: 'CONTACT ME';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: 100px; /* Match with My Skills */
+  color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-form .form-control {
+    padding: 15px;
+  }
+
+  .contact-form button {
+    padding: 12px;
+  }
+}
+
+/* Large Background Text */
+#contact h1 {
+  font-size: 36px; /* Match with My Skills */
+  font-weight: bold;
+  color: #007bff; /* Match with My Skills */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#contact h1::after {
+  content: "CONTACT ME";
+  position: absolute;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 100px; /* Match with My Skills */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Form Row Flexbox */
+#contactForm .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+#contactForm .control-group.col-sm-6 {
+  flex: 1;
+  width: 45%;
+}
