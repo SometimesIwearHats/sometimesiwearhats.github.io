@@ -152,7 +152,7 @@ section {
   padding: 15px;
   border: none;
   border-radius: 50px;
-  background-color: #17c3b2;
+  background-color: #007bff;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -231,22 +231,6 @@ section {
   width: 45%;
 }
 
-/* About section styling */
-#about h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-#about p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-#about .btn-primary:hover {
-  background-color: #138496;
-  border-color: #117a8b;
-}
-
 
 /* Skills section styling */
 #skills h1 {
@@ -301,4 +285,61 @@ section {
   justify-content: space-between;
 }
 
+/* Global section title styling */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff; /* Blue color */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About Me Section */
+#about {
+  background-color: #d8e9ff; /* Light blue background */
+  padding: 60px 0; /* Add some padding */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#about img {
+  border-radius: 50%; /* Circular image */
+  border: 5px solid #007bff; /* Border matching the blue theme */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Image shadow */
+}
+
+#about h1 {
+  font-size: 2.8rem;
+  color: #007bff; /* Blue color for the heading */
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555; /* Softer color for the paragraphs */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
