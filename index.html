@@ -52,7 +52,7 @@
   <!-- Navbar -->
   <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
     <a href="index.html" class="navbar-brand ml-lg-3">
-      <h1 class="m-0 display-5"><span class="text-primary">Developer</span>Rosati-White</h1>
+      <h1 class="m-0 display-5"><span class="text-primary">Dev.</span>Rosati-White</h1>
 
       <!-- Social Media Buttons -->
       <div class="d-flex justify-content-center mb-4">
@@ -74,9 +74,9 @@
       <div class="navbar-nav m-auto py-0">
         <a href="#home" class="nav-item nav-link active">Home</a>
         <a href="#about" class="nav-item nav-link">About</a>
-        <a href="#skill" class="nav-item nav-link">Skills</a>
-        <a href="#services" class="nav-item nav-link">Services</a>
+        <a href="#skills" class="nav-item nav-link">Skills</a>
         <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+        <a href="#services" class="nav-item nav-link">Services</a>
         <a href="#contact" class="nav-item nav-link">Contact</a>
       </div>
 
@@ -90,10 +90,10 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>            
+              <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
             </div>
             <div class="modal-body">
-              <img src="/assets/images/Resume.png" class="img-fluid" alt="Resume Image">
+              <img id="myCvImage" src="/assets/images/Resume.png" class="img-fluid" alt="Resume Image">
             </div>
             <div class="modal-footer">
               <!-- The only buttons here should be Download and Print -->
@@ -107,8 +107,76 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <div id="header-placeholder"></div>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="text-primary">About Mee</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img src="assets/images/redshirtPic.jpg" alt="Profile Picture" class="img-fluid rounded mb-4"
+            style="width: 300px; height: 400px;">
+        </div>
+        <div class="col-lg-8">
+          <h2 class="mb-4">Christopher Rosati-White</h2>
+          <p class="text-muted">
+            I am a passionate Full Stack Developer with a strong foundation in both front-end and
+            back-end technologies. Over the past few years, I have been involved in a wide range of projects, from
+            dynamic web applications to secure, full-stack systems.</p>
+          <p class="text-muted">My expertise includes working with JavaScript, React, Node.js, Express, and various
+            database technologies like MySQL and MongoDB. I thrive on solving complex problems, continually learning new
+            technologies, and creating user-friendly digital experiences.</p>
+          <p class="text-muted">In addition to my technical skills, I am a strong advocate of agile methodologies and
+            collaborative teamwork. I believe in delivering high-quality, maintainable code, and I am committed to
+            continuous improvement and professional development.</p>
+          <p class="text-muted">Whether working independently or as part of a team, I bring dedication, creativity, and
+            a passion for innovation to every project I undertake.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="text-primary">My Skills</h1>
+        <p class="text-muted">A list of some of my technical skills and expertise.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="d-flex flex-wrap justify-content-center">
+            <span class="badge badge-pill bg-secondary text-white m-2">Java</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Javascript</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">C#</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Bootstrap</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">TypeScript</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">PHP - Laravel</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">React</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Node.js</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">MySQL</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">MongoDB</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">AWS Cloud</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Cloud Administration & Security</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Agile</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Git</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">.NET</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">VS Code</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Visual Studio</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">IntelliJ</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Trello</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Firebase</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Flowgorithm</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">HTML5/CSS</span>
+            <span class="badge badge-pill bg-secondary text-white m-2">Eclipse</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- portfolio section--><br>
   <section id="portfolio">
@@ -118,84 +186,40 @@
       <div class="row">
         <div class="col-lg-4 mt-4">
           <div class="card">
-            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="/assets/images/library.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">YouTube Clone</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
+              <h4 class="card-title">Library Management System</h4>
+              <p class="card-text">Fully functional digital Library catalog featuring a MySQL database for efficient
+                search queries supporting CRUD operations.</p>
+
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 mt-4">
           <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="/assets/images/idcard.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">Quiz App</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
+              <h4 class="card-title">School ID card Creator</h4>
+              <p class="card-text">An application that creates a card template and inserts the relevant data into the
+                necessary fields. This can be applied to a wide range of identification cards.</p>
+
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 mt-4">
           <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="/assets/images/livechat.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">Product Landing Page</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
+              <h4 class="card-title">Firebase Live Chat</h4>
+              <p class="card-text">Real time social media messaging app using Firebase authentication and database.</p>
+
             </div>
           </div>
         </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Messaging Service</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Twitter Clone</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4">
-          <div class="card portfolioContent">
-            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Blog App</h4>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <div class="text-center">
-                <a href="#" class="btn btn-success">Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
   </section><br>
 
   <!-- services section-->
@@ -203,6 +227,7 @@
     <div class="container">
       <h1 class="text-center">Services</h1>
       <div class="row">
+
         <!-- Website Development -->
         <div class="col-lg-4 mt-4">
           <div class="card servicesText">
@@ -212,9 +237,10 @@
                 <i class="fas servicesIcon fa-clock"></i>
               </div>
               <h4 class="card-title mt-3">Cloud Services</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+              <p class="card-text mt-3">Leverage the power of cloud computing to scale and manage your business
+                efficiently. I provide cloud integration and migration services that ensures seamless scalability and
+                data
+                security.
               </p>
             </div>
           </div>
@@ -229,10 +255,9 @@
                 <i class='fas servicesIcon fa-layer-group'></i>
               </div>
               <h4 class="card-title mt-3">Website Design</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
+              <p class="card-text mt-3">Transform your vision into a stunning, user-friendly website. I specialize in
+                creating modern, responsive web designs that ensure an excellent user experience on any device. From
+                wireframes to the final product, I bring your vision to life.</p>
             </div>
           </div>
         </div>
@@ -246,9 +271,9 @@
                 <i class='far servicesIcon fa-check-circle'></i>
               </div>
               <h4 class="card-title mt-3">Website Deployment</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+              <p class="card-text mt-3">Deploy your website with confidence. I handle server setup, code deployment, and
+                performance optimization, ensuring
+                that your website is fast, secure, and accessible from anywhere in the world.
               </p>
             </div>
           </div>
@@ -261,14 +286,12 @@
           <div class="card servicesText">
             <div class="card-body">
               <div class="service-icon-wrapper">
-                <img src="path/to/your-seo-image.png" alt="SEO" class="service-image">
+                <img src="/assets/images/SEO.jpg" alt="SEO" class="service-image">
                 <i class='fas servicesIcon fa-search'></i>
               </div>
               <h4 class="card-title mt-3">SEO</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
+              <p class="card-text mt-3"> I use the latest strategies and tools to optimize your content, ensuring
+                higher rankings on search engines and better reach to your target audience.</p>
             </div>
           </div>
         </div>
@@ -278,13 +301,13 @@
           <div class="card servicesText">
             <div class="card-body">
               <div class="service-icon-wrapper">
-                <img src="" alt="DevOps" class="service-image">
+                <img src="/assets/images/devOps.jpg" alt="DevOps" class="service-image">
                 <i class='fas servicesIcon fa-shield-alt'></i>
               </div>
               <h4 class="card-title mt-3">DevOps</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+              <p class="card-text mt-3">Streamline your software development and operations with my DevOps services. I
+                provide continuous integration, automated deployment, and monitoring solutions to optimize workflow and
+                ensure rapid, stable releases with minimal downtime.
               </p>
             </div>
           </div>
@@ -299,9 +322,9 @@
                 <i class='fas servicesIcon fa-wrench'></i>
               </div>
               <h4 class="card-title mt-3">QA</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
+              <p class="card-text mt-3">Ensure your product is flawless with my comprehensive QA services. I offer
+                manual and automated testing to identify bugs and performance issues, ensuring your application delivers
+                a seamless user experience before launch.
               </p>
             </div>
           </div>
@@ -346,7 +369,7 @@
                 <p class="help-block text-danger"></p>
               </div>
               <div>
-                <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                <button class="btn" type="submit" id="sendMessageButton">Get In Touch</button>
               </div>
             </form>
 
